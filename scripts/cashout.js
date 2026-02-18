@@ -14,10 +14,10 @@ document.getElementById('cashOutButton').addEventListener('click', function(){
         return;
     }
     
-    const pinNumber = document.getElementById('pinNumber').value;
+    const pinNumber = document.getElementById('login-pin').value;
     const balenceTag = document.getElementById('balance');
 
-    if(pinNumber ==='1234'){
+    if(pinNumber == '1234'){
         alert('Cash-Out Successful')
         const newBalence = balenceInNumber - amountInput;
         balenceTag.innerText = newBalence;
