@@ -37,7 +37,7 @@
     </style>
   </head>
   <body class="min-h-screen max-w-md bg-base-200 mx-auto">
-    <header class="border-b-2 border-gray-300 sticky top-0 bg-base-200">
+    <header class="border-b-2 border-gray-300 sticky top-0  z-10 bg-base-200">
       <section class="w-11/12 mx-auto py-3 flex justify-between items-center">
         <div class="left flex gap-2.5">
           <div class="logo w-[60px]">
@@ -99,7 +99,7 @@
         <div class="card-body">
           <fieldset class="fieldset">
             <label class="label text-neutral font-bold">Select A Bank</label>
-            <select class="select w-full rounded-full">
+            <select class="select w-full rounded-full" id="bank-option">
               <option disabled selected>Select A back</option>
               <option value="Sonali">Sonali</option>
               <option value="Rupali">Rupali</option>
@@ -194,6 +194,7 @@
       </div>
     </section>
     <script src="scripts/machin.js"></script>
+    <script src="scripts/add-money.js"></script>
     <script src="scripts/cashout.js"></script>
     </body>
 </html>

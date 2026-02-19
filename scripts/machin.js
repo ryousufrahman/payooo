@@ -7,7 +7,7 @@ function getValueFromInput(id) {
 function balenceInNumber (){
 const balenceElement =document.getElementById('balance');
 const balance = balenceElement.innerText;
-return Number(balance);
+ return Number(balance);
 
 }
 function setBalence(value) {
