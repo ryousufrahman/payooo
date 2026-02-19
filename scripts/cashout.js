@@ -13,7 +13,7 @@ document.getElementById('cashOutButton').addEventListener('click', function(){
         alert('insufficient');
         return;
     }
- const pin = getValueFromInput('login-pin');
+ const pin = getValueFromInput('cashOut-pin');
   const newBalence = balence - amountInput;
    if(pin ==='1234'){
      alert('Cash-Out Successful')
