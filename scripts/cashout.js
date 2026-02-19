@@ -1,25 +1,23 @@
 // using machin
 document.getElementById('cashOutButton').addEventListener('click', function(){
-
+    
     const agentNumber = getValueFromInput('agentNumber');
     if(agentNumber.length !=11){
         alert('invalid agent number')
         return;
     }
-    const balenceAmount = document.getElementById('balance').innerText;
+   
     const amountInput = getValueFromInput('amount-cashOut');
-    const balenceInNumber = Number(balenceAmount);
-   if(balenceInNumber - amountInput < 0){
+    const balence = balenceInNumber () ;
+   if(balence - amountInput < 0){
         alert('insufficient');
         return;
     }
-
-  const pin = getValueFromInput('login-pin');
-  const balenceElement =document.getElementById('balance')
+ const pin = getValueFromInput('login-pin');
+  const newBalence = balence - amountInput;
    if(pin ==='1234'){
      alert('Cash-Out Successful')
-     const newBalence = balenceInNumber - amountInput;
-     balenceElement.innerText = newBalence;
+     setBalence(newBalence);
 
    }
    else{
