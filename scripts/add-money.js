@@ -27,4 +27,7 @@ document.getElementById('add-money-btn').addEventListener('click', function(){
         alert('add-money-successfull')
         setBalence(newBalence);
     }
+    else{
+        alert('invalid pin')
+    }
 })

@@ -15,3 +15,17 @@ function setBalence(value) {
     balenceElement.innerText = value
     
 }
+
+function hideSection(id){
+
+   const cashOut = document.getElementById('cash-out-section');
+   const addMoney = document.getElementById('add-money-section');
+
+   addMoney.classList.add('hidden');
+   cashOut.classList.add('hidden');
+
+   const selected =document.getElementById(id)
+
+   selected.classList.remove('hidden')
+
+}
