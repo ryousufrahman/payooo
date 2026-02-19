@@ -19,6 +19,17 @@ document.getElementById('cashOutButton').addEventListener('click', function(){
      alert('Cash-Out Successful')
      setBalence(newBalence);
 
+     const transectionAddMoney =document.getElementById('transection-histroy-container');
+        const newHistory = document.createElement('div');
+        newHistory.innerHTML =`
+           <div class=" py-3 px-6 bg-white  rounded-full mb-3">
+           New cashout has created to ${agentNumber} amount of ${amountInput} at ${new Date()}
+          </div>
+        
+        
+        `;
+        transectionAddMoney.appendChild(newHistory);
+
    }
    else{
     alert('invaid pin')

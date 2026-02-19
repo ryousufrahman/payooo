@@ -21,10 +21,12 @@ function hideSection(id){
    const cashOut = document.getElementById('cash-out-section');
    const addMoney = document.getElementById('add-money-section');
    const tranferMoney = document.getElementById('transfer-section');
+   const transectionSection = document.getElementById('transection-section')
 
    addMoney.classList.add('hidden');
    cashOut.classList.add('hidden');
    tranferMoney.classList.add('hidden');
+   transectionSection.classList.add('hidden')
 
    const selected =document.getElementById(id)
 
