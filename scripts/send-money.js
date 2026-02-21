@@ -14,7 +14,7 @@ document.getElementById('send-money-Button').addEventListener('click', function(
     if(transferpin==='1234'){
         alert('Send money successful')
         const newBalence = balenceInNumber() - transferAmmount
-        setBalence(newBalence);
+         setBalence(newBalence);
 
          const transectionAddMoney =document.getElementById('transection-histroy-container');
         const newHistory = document.createElement('div');
